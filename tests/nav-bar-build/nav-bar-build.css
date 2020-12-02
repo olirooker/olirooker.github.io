@@ -18,10 +18,7 @@ body {
 /* ---------- Container ---------- */
 
 .container {
-  /* display: grid; */
-  padding: 0;
-  margin: 0 auto;
-  height: 100vh;
+  
 }
 
 /* ---------- Nav Bar Background ---------- */
@@ -98,7 +95,7 @@ header {
 
 /* ---------- Hero Section ---------- */
 
-main {
+.hero-section {
   background-color: lightgray;
 }
 
@@ -138,13 +135,22 @@ main {
 
 /* ---------- End of Hero Section ---------- */
 
-/* ---------- Content ---------- */
+/* ---------- Projects ---------- */
 
-/* ---------- End of Content ---------- */
+.projects-section {
+  background-color: lightsalmon;
+}
+
+/* ---------- End of Projects ---------- */
+
+.contact-section {
+  background-color: lightskyblue;
+}
 
 /* ---------- Footer ---------- */
 
 footer {
+  background-color: lightyellow;
   display: flex;
   color: #bdbdbd;
 }
