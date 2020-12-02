@@ -6,6 +6,8 @@
   color: inherit;
 }
 
+/* ---------- Basic Styling ---------- */
+
 body {
   font-family: 'Poppins', sans-serif;
   padding: 0;
@@ -13,29 +15,27 @@ body {
   color: #333;
 }
 
-p {
-  max-width: 600px;
-}
+/* ---------- Container ---------- */
 
 .container {
-  max-width: 1200px;
-  padding: 24px;
+  /* display: grid; */
+  padding: 0;
   margin: 0 auto;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
+
+/* ---------- Nav Bar Background ---------- */
 
 header {
   display: flex;
   align-items: center;
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #262626;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    padding: 35px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #262626;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  padding: 35px;
 }
 
 /* ---------- Navigation ---------- */
@@ -94,15 +94,12 @@ header {
   outline: none;
 }
 
-main {
-  display: flex;
-  align-items: center;
-}
+/* ---------- End of Navigation ---------- */
 
-.main-section {
-  flex: 1;
-  margin-top: 40px;
-  margin-bottom: 40px;
+/* ---------- Hero Section ---------- */
+
+main {
+  background-color: lightgray;
 }
 
 .hero-title {
@@ -118,6 +115,7 @@ main {
   padding: 0;
   margin-top: 24px;
   margin-bottom: 40px;
+  max-width: 600px;
 }
 
 .projects-button {
@@ -138,35 +136,29 @@ main {
   outline: none;
 }
 
-.hero-image {
-  flex: 2;
-}
+/* ---------- End of Hero Section ---------- */
 
-.hero-image img {
-  width: 100%;
-}
+/* ---------- Content ---------- */
+
+/* ---------- End of Content ---------- */
+
+/* ---------- Footer ---------- */
 
 footer {
   display: flex;
   color: #bdbdbd;
 }
 
-.socials {
-  margin-right: 40px;
-}
-
-.social-item {
-  margin-right: 12px;
-}
-
-.social-item:hover {
-  color: #333;
-}
+/* ---------- End of Footer ---------- */
 
 /* ---------- Mobile Menu ---------- */
 
 .menu-button {
   display: none;
+}
+
+.menu-button button:focus {
+  outline: none;
 }
 
 .mobile-nav {
@@ -201,6 +193,10 @@ footer {
   font-size: 2.5rem;
 }
 
+.close-button button:focus {
+  outline: none;
+}
+
 .mobile-nav-item {
   text-decoration: none;
   font-size: 2rem;
@@ -227,6 +223,8 @@ footer {
   outline: none;
 }
 
+/* ---------- Mobile Menu Breakpoint ---------- */
+
 @media only screen and (max-width: 660px) {
   main {
     display: block;
@@ -234,6 +232,18 @@ footer {
 
   header .logo {
     display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    box-shadow: 0 2px 0 transparent;
+    padding: 35px;
   }
 
   .navigation {
@@ -255,3 +265,5 @@ footer {
     display: block;
   }
 }
+
+/* ---------- End of Mobile Menu ---------- */
