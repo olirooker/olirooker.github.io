@@ -23,9 +23,10 @@ body {
 
 /* ---------- Nav Bar Background ---------- */
 
-header {
+.nav-bar {
   display: flex;
   align-items: center;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -92,6 +93,10 @@ header {
 }
 
 /* ---------- End of Navigation ---------- */
+
+main {
+  margin-top: 115px;
+}
 
 /* ---------- Hero Section ---------- */
 
@@ -233,23 +238,23 @@ footer {
 
 @media only screen and (max-width: 660px) {
   main {
-    display: block;
+    margin-top: 0;
   }
 
   header .logo {
     display: none;
   }
 
-  header {
+  .nav-bar {
     display: flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     background: transparent;
     box-shadow: 0 2px 0 transparent;
-    padding: 35px;
+    padding: 35px; 
   }
 
   .navigation {
