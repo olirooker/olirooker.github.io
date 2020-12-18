@@ -13,6 +13,7 @@ body {
   padding: 0;
   margin: 0;
   color: #333;
+  min-width: 400px;
 }
 
 /* ---------- Container ---------- */
@@ -53,11 +54,6 @@ body {
   text-decoration: none;
   color: #bdbdbd;
   font-size: 18px;
-  margin-left: 24px;
-}
-
-.nav-item:first-child {
-  margin-left: 0;
 }
 
 .nav-item:hover {
@@ -82,6 +78,7 @@ body {
 
 .contact-button {
   border: none;
+  margin-right: 40px;
   background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
   padding: 10px 36px;
   border-radius: 50px;
@@ -149,6 +146,7 @@ main {
 
 .projects-section {
   background-color: lightsalmon;
+  height: 400px;
 }
 
 /* ---------- End of Projects ---------- */
@@ -169,80 +167,11 @@ footer {
 
 /* ---------- Mobile Menu ---------- */
 
-.menu-button {
-  display: none;
-}
-
-.menu-button button:focus {
-  outline: none;
-}
-
-.mobile-nav {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  padding: 24px;
-  display: none;
-  transform: translateX(-100%);
-  transition: transform 300ms ease-in-out;
-}
-
-.mobile-nav-open {
-  transform: translateX(0);
-}
-
-.mobile-nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.mobile-logo {
-  margin-top: 0;
-}
-
-.close-button button {
-  border: none;
-  background-color: transparent;
-  font-size: 2.5rem;
-}
-
-.close-button button:focus {
-  outline: none;
-}
-
-.mobile-nav-item {
-  text-decoration: none;
-  font-size: 2rem;
-  color: #bdbdbd;
-  display: block;
-  margin-bottom: 24px;
-}
-
-.mobile-nav-item:active {
-  color: #333;
-}
-
-.mobile-contact-button {
-  border: none;
-  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 10px 36px;
-  border-radius: 50px;
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 40px;
-}
-
-.mobile-contact-button:focus {
-  outline: none;
-}
-
 /* ---------- Mobile Menu Breakpoint ---------- */
 
 @media only screen and (max-width: 660px) {
   main {
+    display: block;
     margin-top: 0;
   }
 
@@ -257,28 +186,13 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    background: transparent;
-    box-shadow: 0 2px 0 transparent;
+    background-color: #262626;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     padding: 35px;
   }
 
   .navigation {
     display: none;
-  }
-
-  .menu-button {
-    display: inline;
-    flex-grow: 1;
-  }
-
-  .menu-button button {
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-  }
-
-  .mobile-nav {
-    display: block;
   }
 }
 

@@ -1,10 +1,6 @@
-const menuNav = document.getElementById("mobile-nav");
-const desktopContactBtn = document.getElementById("contact-button");
-
-toggle = () => {
-  if (menuNav.classList.contains("mobile-nav-open")) {
-    menuNav.classList.remove("mobile-nav-open");
-  } else {
-    menuNav.classList.add("mobile-nav-open");
-  }
+navScroll = () => {
+  window.addEventListener("scroll", function () {
+    const navBar = document.querySelector("header");
+    navBar.classList.toggle("sticky", window.scrollY > 0);
+  });
 };
