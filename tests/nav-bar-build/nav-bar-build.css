@@ -96,7 +96,7 @@ nav {
   background-color: white;
 }
 
-.social-button {
+/* .social-button {
   border: none;
   margin-right: 20px;
   background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
@@ -108,12 +108,16 @@ nav {
 
 .social-button:focus {
   outline: none;
-}
+} */
 
 span .nav-socials {
+  color: #bdbdbd;
+  margin-right: 40px;
+  font-size: 40px;
+}
+
+span .nav-socials:hover {
   color: white;
-  margin-right: 20px;
-  font-size: 30px;
 }
 
 /* ---------- End of Navigation ---------- */
