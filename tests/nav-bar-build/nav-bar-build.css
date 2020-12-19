@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font: inherit;
   color: inherit;
+  scroll-behavior: smooth;
 }
 
 /* ---------- Basic Styling ---------- */
@@ -14,6 +15,7 @@ body {
   margin: 0;
   color: #333;
   min-width: 400px;
+  background: lightgray;
 }
 
 /* ---------- Container ---------- */
@@ -24,7 +26,7 @@ body {
 
 /* ---------- Nav Bar Background ---------- */
 
-.nav-bar {
+header {
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -33,27 +35,45 @@ body {
   left: 0;
   width: 100%;
   background: #262626;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
   padding: 35px;
+  font-size: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+header.sticky {
+  padding: 15px;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-in-out;
 }
 
 /* ---------- Navigation ---------- */
 
-.navigation {
+.logo {
+  text-decoration: none;
+  margin-left: 20px;
+  /* margin-right: 20px; */
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav {
   flex-grow: 1;
 }
 
 .nav-row {
   display: flex;
   display: inline-block;
-  margin-left: 40px;
   position: relative;
+  margin-left: 40px;
 }
 
 .nav-item {
   text-decoration: none;
   color: #bdbdbd;
-  font-size: 18px;
 }
 
 .nav-item:hover {
@@ -78,11 +98,12 @@ body {
 
 .contact-button {
   border: none;
-  margin-right: 40px;
+  margin-right: 20px;
   background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 10px 36px;
+  padding: 20px;
   border-radius: 50px;
   color: white;
+  font-size: 18px;
 }
 
 .contact-button:focus {
@@ -91,14 +112,12 @@ body {
 
 /* ---------- End of Navigation ---------- */
 
-main {
-  margin-top: 115px;
-}
-
 /* ---------- Hero Section ---------- */
 
 .hero-section {
+  margin-top: 115px;
   background-color: lightgray;
+  height: 85vh;
 }
 
 .hero-title {
@@ -142,17 +161,27 @@ main {
 
 /* ---------- End of Hero Section ---------- */
 
+/* ---------- About ---------- */
+
+.about-section {
+  background-color: lightskyblue;
+  height: 500px;
+}
+
+/* ---------- End of Projects ---------- */
+
 /* ---------- Projects ---------- */
 
 .projects-section {
   background-color: lightsalmon;
-  height: 400px;
+  height: 500px;
 }
 
 /* ---------- End of Projects ---------- */
 
 .contact-section {
-  background-color: lightskyblue;
+  background-color: lightgoldenrodyellow;
+  height: 500px;
 }
 
 /* ---------- Footer ---------- */
@@ -161,25 +190,28 @@ footer {
   background-color: lightyellow;
   display: flex;
   color: #bdbdbd;
+  height: 500px;
 }
 
 /* ---------- End of Footer ---------- */
 
-/* ---------- Mobile Menu ---------- */
-
-/* ---------- Mobile Menu Breakpoint ---------- */
-
-@media only screen and (max-width: 660px) {
-  main {
-    display: block;
-    margin-top: 0;
+@media only screen and (max-width: 900px) {
+  header {
+    font-size: 18px;
   }
 
-  header .logo {
-    display: none;
+  header.sticky {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-section {
+    margin: 0;
+    height: 85vh;
   }
 
-  .nav-bar {
+  header {
     display: flex;
     align-items: center;
     position: sticky;
@@ -191,9 +223,7 @@ footer {
     padding: 35px;
   }
 
-  .navigation {
+  nav {
     display: none;
   }
 }
-
-/* ---------- End of Mobile Menu ---------- */

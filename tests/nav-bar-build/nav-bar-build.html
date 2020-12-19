@@ -20,36 +20,38 @@
     <!-- <div class="container"> -->
 
     <header>
-      <div class="nav-bar"></div>
-        <div class="toggle"></div>
-        <nav class="navigation">
-          <div class="nav-row">
-            <a href="#" class="nav-item">Home</a>
-            <div class="nav-indicator"></div>
-          </div>
-          <div class="nav-row">
-            <a href="#" class="nav-item">About</a>
-            <div class="nav-indicator"></div>
-          </div>
-          <div class="nav-row">
-            <a href="#" class="nav-item">Projects</a>
-            <div class="nav-indicator"></div>
-          </div>
-        </nav>
-        <button class="contact-button">Get in touch</button>
-      </div>
+      <a href="#home" class="logo">Oli Rooker</a>
+      <nav>
+        <div class="nav-row">
+          <a href="#about" class="nav-item">About</a>
+          <div class="nav-indicator"></div>
+        </div>
+        <div class="nav-row">
+          <a href="#projects" class="nav-item">Projects</a>
+          <div class="nav-indicator"></div>
+        </div>
+        <div class="nav-row">
+          <a href="#contact" class="nav-item">Contact</a>
+          <div class="nav-indicator"></div>
+        </div>
+      </nav>
+      <button class="contact-button"></button>
     </header>
 
-    <main>
-      <div class="hero-section">
+    <main id="home">
+      <section class="hero-section">
         <h1 class="hero-title">Title</h1>
         <p class="hero-text">Oli Rooker, Full Stack Software Developer</p>
         <button class="projects-button">See Projects</button>
-      </div>
-      <section class="projects-section">
-        <span>Projects</span>
       </section>
-      <section class="contact-section">
+      <section class="about-section" id="about">
+        <span>About</span>
+      </section>
+      <section class="projects-section" id="projects">
+        <span>Projects</span>
+        <i class="fas fa-camera"></i>
+      </section>
+      <section class="contact-section" id="contact">
         <span>Contact</span>
       </section>
     </main>
