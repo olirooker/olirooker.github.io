@@ -96,18 +96,24 @@ nav {
   background-color: white;
 }
 
-.contact-button {
+.social-button {
   border: none;
   margin-right: 20px;
   background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 20px;
-  border-radius: 50px;
+  padding: 0 10px;
+  border-radius: 50%;
   color: white;
-  font-size: 18px;
+  font-size: 30px;
 }
 
-.contact-button:focus {
+.social-button:focus {
   outline: none;
+}
+
+span .nav-socials {
+  color: white;
+  margin-right: 20px;
+  font-size: 30px;
 }
 
 /* ---------- End of Navigation ---------- */
@@ -224,6 +230,10 @@ footer {
   }
 
   nav {
+    display: none;
+  }
+
+  span .nav-socials {
     display: none;
   }
 }
