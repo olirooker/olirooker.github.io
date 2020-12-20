@@ -24,8 +24,11 @@ body {
   
 } */
 
-/* ---------- Nav Bar Background ---------- */
+.home-link {
+  color: transparent;
+}
 
+/* ---------- Nav Bar Background ---------- */
 header {
   display: flex;
   align-items: center;
@@ -77,7 +80,8 @@ nav {
 }
 
 .nav-item:hover {
-  color: white;
+  /* color: white; */
+  color: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
 }
 
 .nav-indicator {
@@ -93,7 +97,8 @@ nav {
 .nav-item:hover ~ .nav-indicator {
   width: 100%;
   left: 0%;
-  background-color: white;
+  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
+  /* background-color: white; */
 }
 
 /* .social-button {
@@ -125,7 +130,7 @@ span .nav-socials:hover {
 /* ---------- Hero Section ---------- */
 
 .hero-section {
-  margin-top: 115px;
+  margin-top: 80px;
   background-color: lightgray;
   height: 85vh;
 }
