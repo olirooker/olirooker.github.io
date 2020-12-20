@@ -134,9 +134,12 @@ span .nav-socials:hover {
 /* ---------- Hero Section ---------- */
 
 .hero-section {
-  margin-top: 110px;
   background-color: lightgray;
-  height: 85vh;
+  height: 100vh;
+}
+
+.hero-container {
+  padding-top: 110px;
 }
 
 .hero-title {
@@ -240,7 +243,7 @@ footer {
     position: fixed;
     top: 80px;
     left: -100%;
-    padding: 50px 50px;
+    padding: 15% 0;
     text-align: center;
     width: 100%;
     height: 100vh;
@@ -307,7 +310,11 @@ footer {
   /* ---------- Hero section ---------- */
 
   .hero-section {
-    margin: 0;
-    height: 90vh;
+    height: 100vh;
+  }
+
+  .hero-container {
+    margin: 0 auto;
+    padding: 0;
   }
 }
