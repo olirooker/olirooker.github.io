@@ -18,31 +18,44 @@
 
   <body>
     <!-- <div class="container"> -->
-    <div id="home" class="home-link">.</div>
+    <div id="home" class="home-link"></div>
     <header>
       <a href="#home" class="logo">Oli Rooker</a>
-      <nav>
+      <nav id="nav">
         <div class="nav-row">
-          <a href="#about" class="nav-item">About</a>
+          <a href="#about" class="nav-item" onclick="toggleNav()">About</a>
           <div class="nav-indicator"></div>
         </div>
         <div class="nav-row">
-          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#projects" class="nav-item" onclick="toggleNav()"
+            >Projects</a
+          >
           <div class="nav-indicator"></div>
         </div>
         <div class="nav-row">
-          <a href="#contact" class="nav-item">Contact</a>
+          <a href="#contact" class="nav-item" onclick="toggleNav()">Contact</a>
           <div class="nav-indicator"></div>
         </div>
+        <a
+          href="https://www.linkedin.com/in/oliverrooker/"
+          class="nav-row nav-item mobile-option"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/olirooker"
+          class="nav-row nav-item mobile-option"
+          >GitHub</a
+        >
       </nav>
       <span>
-        <a href="https://github.com/olirooker"
-          ><i class="fa fa-github nav-socials"></i
-        ></a>
         <a href="https://www.linkedin.com/in/oliverrooker/"
           ><i class="fa fa-linkedin-square nav-socials"></i
         ></a>
+        <a href="https://github.com/olirooker"
+          ><i class="fa fa-github nav-socials"></i
+        ></a>
       </span>
+      <div class="toggle fa" id="toggle" onclick="toggleNav()"></div>
     </header>
 
     <main>
@@ -70,6 +83,18 @@
         const navBar = document.querySelector("header");
         navBar.classList.toggle("sticky", window.scrollY > 0);
       });
+
+      toggleNav = () => {
+        const navToggle = document.getElementById("toggle");
+        const nav = document.getElementById("nav");
+        navToggle.classList.toggle("active");
+        nav.classList.toggle("active");
+      };
+
+      // closeMenu = () => {
+      //   const nav = document.getElementById("nav");
+      //   nav.classList.toggle("active");
+      // };
     </script>
   </body>
 </html>

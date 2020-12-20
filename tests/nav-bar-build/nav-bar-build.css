@@ -89,7 +89,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 3px;
+  height: 4px;
   width: 0%;
   transition: all 300ms ease-in-out;
 }
@@ -123,6 +123,10 @@ span .nav-socials {
 
 span .nav-socials:hover {
   color: white;
+}
+
+.toggle {
+  display: none;
 }
 
 /* ---------- End of Navigation ---------- */
@@ -208,25 +212,20 @@ footer {
   height: 500px;
 }
 
-/* ---------- End of Footer ---------- */
-
-@media only screen and (max-width: 900px) {
-  header {
-    font-size: 18px;
-  }
-
-  header.sticky {
-    font-size: 16px;
-  }
+.mobile-option {
+  display: none;
 }
 
-@media only screen and (max-width: 750px) {
+/* ---------- End of Footer ---------- */
+
+@media only screen and (max-width: 768px) {
   .hero-section {
     margin: 0;
     height: 85vh;
   }
 
-  header {
+  header,
+  header.sticky {
     display: flex;
     align-items: center;
     position: sticky;
@@ -234,12 +233,68 @@ footer {
     left: 0;
     width: 100%;
     background-color: #262626;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    padding: 35px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    font-size: 18px;
   }
 
   nav {
+    margin: 0 auto;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    padding: 60px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    transition: all 200ms ease-in-out;
+  }
+
+  nav.active {
+    left: 0;
+  }
+
+  .nav-row {
+    display: block;
+    top: 0;
+    margin: 30px;
+  }
+
+  .nav-item {
+    margin: 0 auto;
+    color: black;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .mobile-option {
+    margin: 30px;
+  }
+
+  .nav-item:hover ~ .nav-indicator {
     display: none;
+  }
+
+  .toggle {
+    margin: 0 0 0 auto;
+    padding: 0 35px;
+    display: contents;
+    color: white;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: url(assets/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+  .toggle.active {
+    background: url(assets/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
   }
 
   span .nav-socials {
