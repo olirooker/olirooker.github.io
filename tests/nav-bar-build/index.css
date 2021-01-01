@@ -29,6 +29,7 @@ body {
 }
 
 /* ---------- Nav Bar Background ---------- */
+
 header {
   display: flex;
   align-items: center;
@@ -42,6 +43,7 @@ header {
   padding: 35px;
   font-size: 20px;
   transition: all 500ms ease-in-out;
+  z-index: 2;
 }
 
 header.sticky {
@@ -100,20 +102,6 @@ nav {
   background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
   /* background-color: white; */
 }
-
-/* .social-button {
-  border: none;
-  margin-right: 20px;
-  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 0 10px;
-  border-radius: 50%;
-  color: white;
-  font-size: 30px;
-}
-
-.social-button:focus {
-  outline: none;
-} */
 
 span .nav-socials {
   color: #bdbdbd;
@@ -187,7 +175,7 @@ span .nav-socials:hover {
 
 .about-section {
   background-color: lightskyblue;
-  height: 500px;
+  height: 300px;
 }
 
 /* ---------- End of Projects ---------- */
@@ -196,10 +184,104 @@ span .nav-socials:hover {
 
 .projects-section {
   background-color: lightsalmon;
-  height: 500px;
+}
+
+.projects-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: lightgray;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  background: white;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 350px;
+  margin: 1rem;
+}
+
+.banner-img {
+  background: green;
+  position: absolute;
+  object-fit: cover;
+  height: 14rem;
+  width: 100%;
+}
+
+.category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  padding: 0.5rem 1.3rem 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.backend {
+  background-color: orangered;
+}
+
+.frontend {
+  background-color: greenyellow;
+}
+
+.full-stack {
+  background-color: purple;
+}
+
+.card-body {
+  margin: 15rem 1rem 1rem 1rem;
+}
+
+.card-tags {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: lightblue;
+}
+
+.card-title {
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.card-description {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.demo-button {
+  border: none;
+  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: white;
+}
+
+.demo-button:focus {
+  outline: none;
+}
+
+.code-button {
+  border: none;
+  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
+  padding: 5px 20px;
+  border-radius: 50px;
+  color: white;
+}
+
+.code-button:focus {
+  outline: none;
 }
 
 /* ---------- End of Projects ---------- */
+
+/* ---------- Contact ---------- */
 
 .contact-section {
   background-color: lightgoldenrodyellow;
