@@ -28,6 +28,11 @@ body {
   color: transparent;
 }
 
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 /* ---------- Nav Bar Background ---------- */
 
 header {
@@ -91,7 +96,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 4px;
+  height: 3px;
   width: 0%;
   transition: all 300ms ease-in-out;
 }
@@ -99,7 +104,8 @@ nav {
 .nav-item:hover ~ .nav-indicator {
   width: 100%;
   left: 0%;
-  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
+  /* background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%); */
+  background: white;
   /* background-color: white; */
 }
 
@@ -132,7 +138,7 @@ span .nav-socials:hover {
 
 .hero-title {
   font-size: 52px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
@@ -174,8 +180,15 @@ span .nav-socials:hover {
 /* ---------- About ---------- */
 
 .about-section {
+  margin: 0 auto;
+  padding-top: 0.8rem;
+  text-align: center;
   background-color: lightskyblue;
-  height: 300px;
+}
+
+.about-text {
+  margin: 0 8rem;
+  padding-bottom: 5rem;
 }
 
 /* ---------- End of Projects ---------- */
@@ -183,13 +196,20 @@ span .nav-socials:hover {
 /* ---------- Projects ---------- */
 
 .projects-section {
-  background-color: lightsalmon;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects-container {
   margin: 0 auto;
   max-width: 1200px;
-  background-color: lightgray;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 
 .card {
@@ -203,7 +223,7 @@ span .nav-socials:hover {
 }
 
 .banner-img {
-  background: green;
+  background: lightgrey;
   position: absolute;
   object-fit: cover;
   height: 14rem;
@@ -223,31 +243,45 @@ span .nav-socials:hover {
 }
 
 .backend {
-  background-color: orangered;
+  background-color: #277da1;
 }
 
 .frontend {
-  background-color: greenyellow;
+  background-color: #f9c74f;
 }
 
 .full-stack {
-  background-color: purple;
+  background-color: #90be6d;
 }
 
 .card-body {
   margin: 15rem 1rem 1rem 1rem;
 }
 
+.card-title {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
 .card-tags {
   font-size: 0.8rem;
   font-weight: 500;
   color: lightblue;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.card-title {
-  line-height: 1.5rem;
-  margin: 1rem 0 0.5rem;
-  font-size: 1.8rem;
+.card-tag {
+  text-decoration: none;
+  color: white;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 5px;
+  background: #f3722c;
+  /* background: #264653; */
+  border-radius: 5px;
 }
 
 .card-description {
@@ -255,10 +289,16 @@ span .nav-socials:hover {
   font-size: 0.9rem;
 }
 
+.card-buttons {
+  margin-top: 0.5rem;
+}
+
 .demo-button {
   border: none;
-  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 5px 20px;
+  background: royalblue;
+  border-color: royalblue;
+  margin-right: 0.6rem;
+  padding: 5px 35px;
   border-radius: 50px;
   color: white;
 }
@@ -269,8 +309,9 @@ span .nav-socials:hover {
 
 .code-button {
   border: none;
-  background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
-  padding: 5px 20px;
+  background: royalblue;
+  border-color: royalblue;
+  padding: 5px 35px;
   border-radius: 50px;
   color: white;
 }
@@ -284,8 +325,13 @@ span .nav-socials:hover {
 /* ---------- Contact ---------- */
 
 .contact-section {
-  background-color: lightgoldenrodyellow;
-  height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: lightskyblue;
+  height: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------- Footer ---------- */
@@ -294,7 +340,6 @@ footer {
   background-color: lightyellow;
   display: flex;
   color: #bdbdbd;
-  height: 500px;
 }
 
 .mobile-option {
@@ -351,7 +396,7 @@ footer {
     margin: 0 auto;
     color: #333;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .mobile-option {
@@ -399,4 +444,16 @@ footer {
     margin: 0 auto;
     padding: 0;
   }
+
+  /* ---------- About Section ---------- */
+
+  .about-text {
+    margin: 0 4rem;
+  }
+
+  /* ---------- Projects Section ---------- */
 }
+
+/* .card {
+  width: 
+} */
