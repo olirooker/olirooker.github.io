@@ -192,17 +192,19 @@ span .nav-socials:hover {
   padding-bottom: 5rem;
 }
 
-/* ---------- End of Projects ---------- */
+/* ---------- End of About ---------- */
 
 /* ---------- Projects ---------- */
 
 .projects-section {
   /* background-color: white; */
-  background-color: #2a9d8f;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 0.8rem;
+  padding-bottom: 5rem;
   color: white;
+  background: #3a5b69;
 }
 
 .projects-container {
@@ -246,15 +248,15 @@ span .nav-socials:hover {
 }
 
 .backend {
-  background-color: #277da1;
+  background-color: #8ab281;
 }
 
 .frontend {
-  background-color: #f9c74f;
+  background-color: #c987b1;
 }
 
 .full-stack {
-  background-color: #90be6d;
+  background-color: #f4a261;
 }
 
 .card-body {
@@ -266,12 +268,12 @@ span .nav-socials:hover {
   margin-bottom: 1rem;
   font-size: 1.6rem;
   font-weight: 600;
+  color: #333;
 }
 
 .card-tags {
   font-size: 0.8rem;
   font-weight: 500;
-  color: lightblue;
   display: flex;
   flex-wrap: wrap;
 }
@@ -282,7 +284,7 @@ span .nav-socials:hover {
   margin-right: 0.3rem;
   margin-bottom: 0.3rem;
   padding: 5px;
-  background: #f3722c;
+  background: #8c5779;
   /* background: #264653; */
   border-radius: 5px;
 }
@@ -298,29 +300,43 @@ span .nav-socials:hover {
 
 .demo-button {
   border: none;
-  background: royalblue;
-  border-color: royalblue;
+  background: #2a9d8f;
+  border: 1px solid #2a9d8f;
   margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
   color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .demo-button:focus {
   outline: none;
 }
 
+.demo-button:hover {
+  background-color: white;
+  border: 1px solid #264653;
+  color: #264653;
+}
+
 .code-button {
   border: none;
-  background: royalblue;
-  border-color: royalblue;
+  background: #2a9d8f;
+  border: 1px solid #2a9d8f;
   padding: 5px 35px;
   border-radius: 50px;
   color: white;
+  transition: all 300ms ease-in-out;
 }
 
 .code-button:focus {
   outline: none;
+}
+
+.code-button:hover {
+  background-color: white;
+  border: 1px solid #264653;
+  color: #264653;
 }
 
 /* ---------- End of Projects ---------- */
@@ -329,7 +345,7 @@ span .nav-socials:hover {
 
 .contact-section {
   margin: 0 auto;
-  padding: 0;
+  padding-top: 0.8rem;
   text-align: center;
   /* background-color: lightskyblue; */
   height: 300px;
@@ -341,9 +357,9 @@ span .nav-socials:hover {
 /* ---------- Footer ---------- */
 
 footer {
-  background-color: lightyellow;
-  display: flex;
+  background-color: #162227;
   color: #bdbdbd;
+  text-align: center;
 }
 
 .mobile-option {
