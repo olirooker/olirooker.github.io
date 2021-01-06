@@ -179,6 +179,14 @@ span .nav-socials:hover {
 
 /* ---------- About ---------- */
 
+svg {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  fill: #264653;
+}
+
 .about-section {
   margin: 0 auto;
   padding-top: 0.8rem;
@@ -211,10 +219,11 @@ span .nav-socials:hover {
   margin: 0 auto;
   max-width: 1200px;
   /* background-color: white; */
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   /* align-items: center; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .card {
@@ -223,7 +232,7 @@ span .nav-socials:hover {
   background: white;
   border-radius: 0.5rem;
   position: relative;
-  width: 350px;
+  /* width: 350px; */
   margin: 1rem;
 }
 
@@ -233,6 +242,39 @@ span .nav-socials:hover {
   object-fit: cover;
   height: 14rem;
   width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+/* .banner-img:hover .overlay {
+  opacity: 1;
+} */
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .category {
@@ -272,7 +314,7 @@ span .nav-socials:hover {
 }
 
 .card-tags {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
   display: flex;
   flex-wrap: wrap;
@@ -321,8 +363,10 @@ span .nav-socials:hover {
 
 .code-button {
   border: none;
-  background: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  /* background: #2a9d8f;
+  border: 1px solid #2a9d8f; */
+  background: #8ab17d;
+  border: 1px solid #8ab17d;
   padding: 5px 35px;
   border-radius: 50px;
   color: white;
@@ -394,16 +438,12 @@ footer {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: white;
+    background: #264653;
     transition: all 200ms ease-in-out;
   }
 
   nav.active {
     left: 0;
-  }
-
-  .nav-item:hover {
-    color: black;
   }
 
   .nav-row {
@@ -414,9 +454,13 @@ footer {
 
   .nav-item {
     margin: 0 auto;
-    color: #333;
+    color: lightgray;
     font-size: 40px;
     font-weight: 600;
+  }
+
+  .nav-item:hover {
+    color: white;
   }
 
   .mobile-option {
@@ -472,6 +516,18 @@ footer {
   }
 
   /* ---------- Projects Section ---------- */
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* .banner-img:hover .overlay {
+    opacity: 0;
+  } */
+
+  .banner-img:focus .overlay {
+    opacity: 1;
+  }
 }
 
 /* .card {
