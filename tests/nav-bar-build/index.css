@@ -10,7 +10,7 @@
 /* ---------- Basic Styling ---------- */
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
   color: #333;
@@ -130,10 +130,16 @@ span .nav-socials:hover {
 .hero-section {
   background-color: #0f171a;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero-container {
-  padding-top: 110px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -147,9 +153,12 @@ span .nav-socials:hover {
   color: #828282;
   margin: 0;
   padding: 0;
-  margin-top: 24px;
-  margin-bottom: 40px;
-  max-width: 600px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  /* max-width: 80%; */
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .projects-button {
@@ -344,13 +353,15 @@ svg {
 }
 
 .demo-button {
-  border: none;
-  background: #4c948c;
-  border: 1px solid #4c948c;
+  /* border: none; */
+  background: white;
+  border: 1px solid #507345;
+  color: #507345;
+  font-weight: 500;
   margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
-  color: white;
+  color: #507345;
   transition: all 300ms ease-in-out;
 }
 
@@ -360,18 +371,22 @@ svg {
 
 .demo-button:hover {
   background-color: white;
-  border: 1px solid #4c948c;
-  color: #4c948c;
+  color: white;
+  background: #8ab17d;
+  border: 1px solid #8ab17d;
   cursor: pointer;
 }
 
 .code-button {
-  border: none;
-  background: #4c948c;
-  border: 1px solid #4c948c;
+  /* border: none; */
+  background: white;
+  border: 1px solid #507345;
+  color: #507345;
+  font-weight: 500;
+  margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
-  color: white;
+  color: #507345;
   transition: all 300ms ease-in-out;
 }
 
@@ -381,8 +396,9 @@ svg {
 
 .code-button:hover {
   background-color: white;
-  border: 1px solid #4c948c;
-  color: #4c948c;
+  color: white;
+  background: #8ab17d;
+  border: 1px solid #8ab17d;
   cursor: pointer;
 }
 
@@ -416,6 +432,36 @@ footer {
 /* ---------- End of Footer ---------- */
 
 /* ---------- Responsive Behaviours ---------- */
+
+@media only screen and (max-width: 960px) {
+  .hero-text {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .hero-text {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .hero-text {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   header,
@@ -500,12 +546,23 @@ footer {
   /* ---------- Hero section ---------- */
 
   .hero-section {
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: -80px;
+    padding-top: 0;
+    /* height: 100vh; */
   }
 
   .hero-container {
     margin: 0 auto;
     padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .hero-text {
+    /* font-size: 3rem; */
+    margin-top: 0;
+    padding-top: 0;
   }
 
   /* ---------- About Section ---------- */

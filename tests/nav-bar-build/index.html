@@ -62,9 +62,12 @@
     <main>
       <section class="hero-section">
         <div class="hero-container">
-          <h1 class="hero-title">Title</h1>
-          <p class="hero-text">Oli Rooker, Full Stack Software Developer</p>
-          <button class="projects-button">See Projects</button>
+          <!-- <h1 class="hero-title">Title</h1> -->
+          <p class="hero-text">
+            Hello I'm Oli Rooker,<br />
+            Full Stack Software Developer
+          </p>
+          <button class="projects-button">See my work</button>
         </div>
       </section>
       <section class="about-section" id="about">
@@ -233,16 +236,16 @@
     </footer>
     <!-- </div> -->
     <script>
-      window.addEventListener("scroll", function () {
-        const navBar = document.querySelector("header");
-        navBar.classList.toggle("sticky", window.scrollY > 0);
+      window.addEventListener('scroll', function () {
+        const navBar = document.querySelector('header');
+        navBar.classList.toggle('sticky', window.scrollY > 0);
       });
 
       toggleNav = () => {
-        const navToggle = document.getElementById("toggle");
-        const nav = document.getElementById("nav");
-        navToggle.classList.toggle("active");
-        nav.classList.toggle("active");
+        const navToggle = document.getElementById('toggle');
+        const nav = document.getElementById('nav');
+        navToggle.classList.toggle('active');
+        nav.classList.toggle('active');
       };
 
       // closeMenu = () => {
