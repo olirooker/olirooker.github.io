@@ -128,7 +128,7 @@ span .nav-socials:hover {
 /* ---------- Hero Section ---------- */
 
 .hero-section {
-  background-color: #1d3557;
+  background-color: #0f171a;
   height: 100vh;
 }
 
@@ -240,7 +240,7 @@ svg {
   background: lightgrey;
   position: absolute;
   object-fit: cover;
-  height: 14rem;
+  height: 20rem;
   width: 100%;
 }
 
@@ -254,27 +254,30 @@ svg {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #008cba;
+  background-color: #9bb8c5;
+  display: flex;
+  align-items: center;
 }
 
-/* .banner-img:hover .overlay {
-  opacity: 1;
-} */
-
-.card:hover .overlay {
+.banner-img:hover .overlay {
   opacity: 1;
 }
 
 .text {
-  color: white;
+  color: #000000;
   font-size: 1rem;
   position: absolute;
-  top: 50%;
+  display: flex;
+  justify-items: center;
+  /* top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   text-align: center;
+  flex-direction: column;
+
+  margin: 1rem;
 }
 
 .category {
@@ -290,19 +293,19 @@ svg {
 }
 
 .backend {
-  background-color: #8ab281;
-}
-
-.frontend {
-  background-color: #c987b1;
-}
-
-.full-stack {
   background-color: #f4a261;
 }
 
+.frontend {
+  background-color: #c3941d;
+}
+
+.full-stack {
+  background-color: #e76f51;
+}
+
 .card-body {
-  margin: 15rem 1rem 1rem 1rem;
+  margin: 21rem 1rem 1rem 1rem;
 }
 
 .card-title {
@@ -326,8 +329,8 @@ svg {
   margin-right: 0.3rem;
   margin-bottom: 0.3rem;
   padding: 5px;
-  background: #8c5779;
-  /* background: #264653; */
+  /* background: #c987b1; */
+  background: #662e52;
   border-radius: 5px;
 }
 
@@ -342,8 +345,8 @@ svg {
 
 .demo-button {
   border: none;
-  background: #2a9d8f;
-  border: 1px solid #2a9d8f;
+  background: #4c948c;
+  border: 1px solid #4c948c;
   margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
@@ -357,16 +360,15 @@ svg {
 
 .demo-button:hover {
   background-color: white;
-  border: 1px solid #264653;
-  color: #264653;
+  border: 1px solid #4c948c;
+  color: #4c948c;
+  cursor: pointer;
 }
 
 .code-button {
   border: none;
-  /* background: #2a9d8f;
-  border: 1px solid #2a9d8f; */
-  background: #8ab17d;
-  border: 1px solid #8ab17d;
+  background: #4c948c;
+  border: 1px solid #4c948c;
   padding: 5px 35px;
   border-radius: 50px;
   color: white;
@@ -379,8 +381,9 @@ svg {
 
 .code-button:hover {
   background-color: white;
-  border: 1px solid #264653;
-  color: #264653;
+  border: 1px solid #4c948c;
+  color: #4c948c;
+  cursor: pointer;
 }
 
 /* ---------- End of Projects ---------- */
@@ -439,7 +442,7 @@ footer {
     width: 100%;
     height: 100vh;
     background: #264653;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
   }
 
   nav.active {
@@ -454,13 +457,9 @@ footer {
 
   .nav-item {
     margin: 0 auto;
-    color: lightgray;
+    color: white;
     font-size: 40px;
     font-weight: 600;
-  }
-
-  .nav-item:hover {
-    color: white;
   }
 
   .mobile-option {
