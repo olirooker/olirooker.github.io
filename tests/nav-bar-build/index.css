@@ -70,7 +70,11 @@ header.sticky {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px #86a8e7;
+  text-shadow: 2px 2px #1d3557;
+}
+
+.logo:hover {
+  text-shadow: 3px 3px #1d3557;
 }
 
 nav {
@@ -87,12 +91,14 @@ nav {
 .nav-item {
   text-decoration: none;
   /* color: #bdbdbd; */
-  color: lightgrey;
+  color: white;
+  text-shadow: 2px 2px rgba(29, 53, 87, 0.4);
 }
 
 .nav-item:hover {
-  color: white;
-  color: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%);
+  /* color: white; */
+  /* text-shadow: 1px 1px #d16ba5; */
+  text-shadow: 2px 2px rgba(29, 53, 87, 1);
 }
 
 .nav-indicator {
@@ -110,17 +116,21 @@ nav {
   left: 0%;
   /* background: linear-gradient(270deg, #ffe86c 0%, #faa245 37.25%, #eb8174 100%); */
   background: white;
+  box-shadow: 2px 2px rgba(29, 53, 87, 1);
+  /* box-shadow: 2px 2px #d16ba5; */
   /* background-color: white; */
 }
 
 span .nav-socials {
-  color: #bdbdbd;
+  color: white;
   margin-right: 40px;
   font-size: 40px;
+  /* text-shadow: 1px 1px #1d3557; */
+  text-shadow: 2px 2px rgba(29, 53, 87, 0.4);
 }
 
 span .nav-socials:hover {
-  color: white;
+  text-shadow: 2px 2px #d16ba5;
 }
 
 .toggle {
@@ -150,7 +160,7 @@ span .nav-socials:hover {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right top,
     #d16ba5,
     #c777b9,
@@ -164,6 +174,21 @@ span .nav-socials:hover {
     #41dfff,
     #46eefa,
     #5ffbf1
+  ); */
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #85a3e8,
+    #6eabec,
+    #56b3ec,
+    #1fbbe8,
+    #00c1dd,
+    #00c6cc,
+    #03c9b7
   );
 }
 
@@ -198,7 +223,8 @@ span .nav-socials:hover {
   font-weight: 600;
   text-align: center;
 
-  text-shadow: 6px 6px #86a8e7;
+  /* text-shadow: 6px 6px #86a8e7; */
+  text-shadow: 6px 6px #1d3557;
 }
 
 .hero-text {
