@@ -15,7 +15,7 @@ body {
   margin: 0;
   color: #333;
   min-width: 400px;
-  background: #264653;
+  /* background: #264653; */
 }
 
 /* ---------- Container ---------- */
@@ -56,7 +56,8 @@ header.sticky {
   font-size: 18px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   transition: all 500ms ease-in-out;
-  background: #264653;
+  /* background: #264653; */
+  background: #1d3557;
 }
 
 /* ---------- Navigation ---------- */
@@ -69,6 +70,7 @@ header.sticky {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 2px 2px #86a8e7;
 }
 
 nav {
@@ -129,12 +131,8 @@ span .nav-socials:hover {
 
 /* ---------- Hero Section ---------- */
 
-.hero-section {
-  /* background-color: #0f171a; */
-  /* background-image: url('../nav-bar-build/assets/pexels-neosiam-601798.jpg'); */
+/* .hero-section {
   background-image: url('../nav-bar-build/assets/pexels-stephane-hurbe-4198029.jpg');
-  /* background-attachment: fixed; */
-  /* position: relative; */
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,14 +142,35 @@ span .nav-socials:hover {
   align-items: center;
   padding: 0;
   margin: 0;
+} */
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
 
 .hero-overlay {
   height: 100%;
   width: 100%;
-  /* opacity: 0.8; */
-  /* background: #344f5b; */
-  background: rgba(52, 79, 91, 0.8);
+  /* background: rgba(52, 79, 91, 0.8); */
   display: flex;
   align-items: center;
 }
@@ -175,14 +194,11 @@ span .nav-socials:hover {
   margin: 0;
   padding: 0;
   grid-row: 6;
-  /* margin-top: 4rem; */
-  /* margin-bottom: 4rem; */
-  /* max-width: 80%; */
-  /* font-size: 5rem; */
   font-size: 6vw;
   font-weight: 600;
   text-align: center;
-  /* background: lightgrey; */
+
+  text-shadow: 6px 6px #86a8e7;
 }
 
 .hero-text {
@@ -254,26 +270,38 @@ svg {
 }
 
 .about-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 0 auto;
   padding-top: 0.8rem;
   text-align: center;
-  color: white;
+  /* color: white; */
   /* background-color: lightskyblue; */
 }
+
+.about-section i {
+  font-size: 3.6rem;
+}
+
+.about-title {
+  color: #86a8e7;
+  text-shadow: 3px 3px #1d3557;
+}
+
+/* .underline {
+  height: 7px;
+  width: 80px;
+  background: #86a8e7;
+  margin-top: -28px;
+} */
 
 .about-text {
   margin: 0 8rem;
   padding-bottom: 5rem;
   position: relative;
-}
-
-.underline {
-  bottom: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 0%;
+  color: black;
+  text-shadow: none;
 }
 
 /* ---------- End of About ---------- */
