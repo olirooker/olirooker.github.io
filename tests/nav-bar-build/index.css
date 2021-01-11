@@ -28,11 +28,6 @@ body {
   color: transparent;
 }
 
-.section-title {
-  font-size: 2.4rem;
-  font-weight: 600;
-}
-
 /* ---------- Nav Bar Background ---------- */
 
 header {
@@ -75,6 +70,7 @@ header.sticky {
 
 .logo:hover {
   text-shadow: 3px 3px #1d3557;
+  transform: translateY(-2px);
 }
 
 nav {
@@ -130,7 +126,8 @@ span .nav-socials {
 }
 
 span .nav-socials:hover {
-  text-shadow: 2px 2px #d16ba5;
+  text-shadow: 2px 2px rgba(29, 53, 87, 1);
+  transform: translateY(-2px);
 }
 
 .toggle {
@@ -141,40 +138,12 @@ span .nav-socials:hover {
 
 /* ---------- Hero Section ---------- */
 
-/* .hero-section {
-  background-image: url('../nav-bar-build/assets/pexels-stephane-hurbe-4198029.jpg');
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-} */
-
 .hero-section {
   height: 100vh;
   display: flex;
   align-items: center;
   padding: 0;
   margin: 0;
-  /* background-image: linear-gradient(
-    to right top,
-    #d16ba5,
-    #c777b9,
-    #ba83ca,
-    #aa8fd8,
-    #9a9ae1,
-    #8aa7ec,
-    #79b3f4,
-    #69bff8,
-    #52cffe,
-    #41dfff,
-    #46eefa,
-    #5ffbf1
-  ); */
   background-image: linear-gradient(
     to right top,
     #d16ba5,
@@ -195,26 +164,21 @@ span .nav-socials:hover {
 .hero-overlay {
   height: 100%;
   width: 100%;
-  /* background: rgba(52, 79, 91, 0.8); */
   display: flex;
   align-items: center;
 }
 
 .hero-container {
-  /* background-color: #cccccc; */
   padding: 0;
   display: grid;
   grid-template-rows: repeat(12, 1fr);
   gap: 0;
   height: 100%;
-  /* max-width: 1400px; */
   align-items: center;
   margin: 0 auto;
-  /* background: lightslategrey; */
 }
 
 .hero-title {
-  /* color: #828282; */
   color: white;
   margin: 0;
   padding: 0;
@@ -222,20 +186,18 @@ span .nav-socials:hover {
   font-size: 6vw;
   font-weight: 600;
   text-align: center;
-
-  /* text-shadow: 6px 6px #86a8e7; */
   text-shadow: 6px 6px #1d3557;
 }
 
 .hero-text {
   padding: 0;
   margin: 0;
-  /* background: lightgrey; */
   grid-row: 9;
   font-size: 1.3rem;
   text-align: center;
   color: white;
   font-weight: 600;
+  text-shadow: 3px 3px #1d3557;
 }
 
 .arrow-container {
@@ -287,12 +249,11 @@ span .nav-socials:hover {
 
 /* ---------- About ---------- */
 
-svg {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 10vw;
-  fill: #264653;
+.section-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #86a8e7;
+  text-shadow: 3px 3px #1d3557;
 }
 
 .about-section {
@@ -302,29 +263,12 @@ svg {
   margin: 0 auto;
   padding-top: 0.8rem;
   text-align: center;
-  /* color: white; */
-  /* background-color: lightskyblue; */
 }
-
-.about-section i {
-  font-size: 3.6rem;
-}
-
-.about-title {
-  color: #86a8e7;
-  text-shadow: 3px 3px #1d3557;
-}
-
-/* .underline {
-  height: 7px;
-  width: 80px;
-  background: #86a8e7;
-  margin-top: -28px;
-} */
 
 .about-text {
   margin: 0 8rem;
-  padding-bottom: 5rem;
+  top: -1rem;
+  padding-bottom: 4rem;
   position: relative;
   color: black;
   text-shadow: none;
@@ -342,7 +286,7 @@ svg {
   padding-top: 0.8rem;
   padding-bottom: 5rem;
   color: white;
-  background: #3a5b69;
+  background: #f6f9fc;
 }
 
 .projects-container {
@@ -384,7 +328,7 @@ svg {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #9bb8c5;
+  background-color: #86a8e7;
   display: flex;
   align-items: center;
 }
@@ -458,7 +402,7 @@ svg {
   margin-bottom: 0.3rem;
   padding: 5px;
   /* background: #c987b1; */
-  background: #662e52;
+  background: #1d3557;
   border-radius: 5px;
 }
 
@@ -472,15 +416,13 @@ svg {
 }
 
 .demo-button {
-  /* border: none; */
   background: white;
-  border: 1px solid #507345;
-  color: #507345;
+  border: 1px solid #d16ba5;
+  color: #d16ba5;
   font-weight: 500;
   margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
-  color: #507345;
   transition: all 300ms ease-in-out;
 }
 
@@ -491,21 +433,19 @@ svg {
 .demo-button:hover {
   background-color: white;
   color: white;
-  background: #8ab17d;
-  border: 1px solid #8ab17d;
+  background: #d16ba5;
+  border: 1px solid #d16ba5;
   cursor: pointer;
 }
 
 .code-button {
-  /* border: none; */
   background: white;
-  border: 1px solid #507345;
-  color: #507345;
+  border: 1px solid #d16ba5;
+  color: #d16ba5;
   font-weight: 500;
   margin-right: 0.6rem;
   padding: 5px 35px;
   border-radius: 50px;
-  color: #507345;
   transition: all 300ms ease-in-out;
 }
 
@@ -516,8 +456,8 @@ svg {
 .code-button:hover {
   background-color: white;
   color: white;
-  background: #8ab17d;
-  border: 1px solid #8ab17d;
+  background: #d16ba5;
+  border: 1px solid #d16ba5;
   cursor: pointer;
 }
 
@@ -534,12 +474,13 @@ svg {
   display: flex;
   justify-content: center;
   color: white;
+  background: #e9ecef;
 }
 
 /* ---------- Footer ---------- */
 
 footer {
-  background-color: #162227;
+  background-color: #212529;
   color: #bdbdbd;
   text-align: center;
 }
@@ -597,7 +538,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #262626;
+    background-color: #1d3557;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 25px;
     font-size: 18px;
@@ -612,7 +553,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: #264653;
+    background: #1d3557;
     transition: all 300ms ease-in-out;
   }
 
@@ -688,6 +629,11 @@ footer {
     font-size: 8vw;
     margin-top: 0;
     padding-top: 0;
+    text-shadow: 4px 4px #1d3557;
+  }
+
+  .hero-text {
+    text-shadow: 2px 2px #1d3557;
   }
 
   /* ---------- About Section ---------- */
