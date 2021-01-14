@@ -306,12 +306,21 @@ span .nav-socials:hover {
   background: white;
   border-radius: 0.5rem;
   position: relative;
-  /* width: 350px; */
+  /* width: 500px; */
   margin: 1rem;
 }
 
 .banner-img {
   background: lightgrey;
+  position: absolute;
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+}
+
+.nc-news-backend {
+  background-image: url('../nav-bar-build/assets/carbon.png');
+  background-size: contain;
   position: absolute;
   object-fit: cover;
   height: 20rem;
@@ -646,6 +655,7 @@ footer {
 
   .projects-container {
     grid-template-columns: 1fr;
+    max-width: 550px;
   }
 
   /* .banner-img:hover .overlay {
