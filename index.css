@@ -297,7 +297,7 @@ span .nav-socials:hover {
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #f6f9fc;
 }
 
 .safe-home {
@@ -315,10 +315,9 @@ span .nav-socials:hover {
   background-image: url('./assets/to-do-img-v2.jpg');
 }
 
-/*
 .form-validation {
-  background-image: url('./assets/');
-} */
+  background-image: url('./assets/form-validation-v2.jpg');
+}
 
 .overlay {
   position: absolute;
