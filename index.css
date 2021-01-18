@@ -299,9 +299,11 @@ span .nav-socials:hover {
   padding-top: 56.25%;
 }
 
-/* .safe-home {
-  background-image: url('./assets/');
+.safe-home {
+  background-image: url('./assets/safe-home.jpg');
 }
+
+/*
 
 .nc-news {
   background-image: url('./assets/');
