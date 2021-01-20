@@ -477,9 +477,31 @@ span .nav-socials:hover {
 /* ---------- Footer ---------- */
 
 footer {
-  background-color: #212529;
-  color: #bdbdbd;
+  background-color: #1d3557;
+  color: white;
   text-align: center;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* footer .footer-socials {
+  display: flex;
+  justify-content: center;
+} */
+
+footer .footer-socials i {
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+footer .footer-socials i:hover {
+  transform: translateY(-2px);
+}
+
+footer .copywrite {
+  margin: 0 0 0 auto;
+  padding-right: 2rem;
 }
 
 .mobile-option {
