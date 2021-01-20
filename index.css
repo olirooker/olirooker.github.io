@@ -304,19 +304,16 @@ span .nav-socials:hover {
   background-image: url('./assets/safe-home.jpg');
 }
 
-/*
-
 .nc-news {
-  background-image: url('./assets/');
+  background-image: url('./assets/nc-news.jpg');
 }
-*/
 
 .to-do-app {
   background-image: url('./assets/to-do-img-v2.jpg');
 }
 
 .form-validation {
-  background-image: url('./assets/form-validation-v2.jpg');
+  background-image: url('./assets/form-validation.jpg');
 }
 
 .overlay {
