@@ -288,6 +288,10 @@ span .nav-socials:hover {
   margin: 1rem;
 }
 
+.card:hover {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+}
+
 .banner-img {
   background: lightgrey;
   background-repeat: no-repeat;
@@ -466,12 +470,9 @@ span .nav-socials:hover {
   margin: 0 auto;
   padding-top: 0.8rem;
   text-align: center;
-  /* background-color: lightskyblue; */
-  height: 300px;
-  display: flex;
-  justify-content: center;
   color: white;
   background: #e9ecef;
+  height: 300px;
 }
 
 /* ---------- Footer ---------- */
@@ -511,42 +512,6 @@ footer .copywrite {
 /* ---------- End of Footer ---------- */
 
 /* ---------- Responsive Behaviours ---------- */
-
-/* @media only screen and (max-width: 1290px) {
-  .hero-title {
-    font-size: 4.8rem;
-  }
-}
-
-@media only screen and (max-width: 960px) {
-  .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 780px) {
-  .hero-title {
-    font-size: 3.5rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-} */
 
 @media only screen and (max-width: 768px) {
   header,
