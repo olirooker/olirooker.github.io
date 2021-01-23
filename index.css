@@ -491,8 +491,6 @@ span .nav-socials:hover {
   display: flex;
   align-items: center;
   color: #1d3557;
-  /* margin-bottom: 4rem; */
-  border: 1px solid red;
 }
 
 .contact-social:hover {
