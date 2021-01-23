@@ -18,6 +18,29 @@ body {
   /* background: #264653; */
 }
 
+.normal-button {
+  background: white;
+  border: 1px solid #d16ba5;
+  color: #d16ba5;
+  font-weight: 500;
+  margin-right: 0.4rem;
+  padding: 5px 20px;
+  border-radius: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+.normal-button:focus {
+  outline: none;
+}
+
+.normal-button:hover {
+  background-color: white;
+  color: white;
+  background: #d16ba5;
+  border: 1px solid #d16ba5;
+  cursor: pointer;
+}
+
 /* ---------- Container ---------- */
 
 /* .container {
@@ -67,6 +90,7 @@ header.sticky {
 .logo:hover {
   text-shadow: 3px 3px #1d3557;
   transform: translateY(-2px);
+  transition: all 200ms ease-in-out;
 }
 
 nav {
@@ -117,6 +141,7 @@ span .nav-socials {
 span .nav-socials:hover {
   text-shadow: 2px 2px rgba(29, 53, 87, 1);
   transform: translateY(-2px);
+  transition: all 200ms ease-in-out;
 }
 
 .toggle {
@@ -416,30 +441,7 @@ span .nav-socials:hover {
   margin-top: 0.5rem;
 }
 
-.demo-button {
-  background: white;
-  border: 1px solid #d16ba5;
-  color: #d16ba5;
-  font-weight: 500;
-  margin-right: 0.6rem;
-  padding: 5px 35px;
-  border-radius: 50px;
-  transition: all 300ms ease-in-out;
-}
-
-.demo-button:focus {
-  outline: none;
-}
-
-.demo-button:hover {
-  background-color: white;
-  color: white;
-  background: #d16ba5;
-  border: 1px solid #d16ba5;
-  cursor: pointer;
-}
-
-.code-button {
+/* .code-button {
   background: white;
   border: 1px solid #d16ba5;
   color: #d16ba5;
@@ -460,7 +462,7 @@ span .nav-socials:hover {
   background: #d16ba5;
   border: 1px solid #d16ba5;
   cursor: pointer;
-}
+} */
 
 /* ---------- End of Projects ---------- */
 
@@ -470,8 +472,42 @@ span .nav-socials:hover {
   margin: 0 auto;
   padding-top: 0.8rem;
   text-align: center;
-  color: white;
   background: #e9ecef;
+  height: 270px;
+}
+
+.contact-socials {
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.contact-social {
+  margin-right: 1rem;
+  color: #1d3557;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #1d3557;
+}
+
+.contact-social:hover {
+  transform: translateY(-2px);
+  transition: all 200ms ease-in-out;
+  color: #1d3557;
+  text-shadow: 3px 3px rgba(209, 107, 165, 0.6);
+}
+
+.contact-social a {
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+.contact-social i {
+  font-size: 3.4rem;
 }
 
 /* .contact-form {
@@ -587,6 +623,7 @@ footer .footer-socials i {
 
 footer .footer-socials i:hover {
   transform: translateY(-2px);
+  transition: all 200ms ease-in-out;
 }
 
 footer .copywrite {
