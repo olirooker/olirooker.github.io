@@ -345,6 +345,10 @@ span .nav-socials:hover {
   background-image: url('./assets/form-validation.jpg');
 }
 
+.restaurant-api {
+  background-image: url('./assets/restaurant-api.png');
+}
+
 .overlay {
   position: absolute;
   bottom: 100%;
